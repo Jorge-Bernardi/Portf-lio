@@ -1,0 +1,169 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    background-image: url(images/planet.jpg);
+ 
+}
+
+.solar-system {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    margin-left: 33%;
+    margin-top: 8%;
+    animation: rotate 10s linear infinite;
+}
+
+.moon {
+    position: absolute;
+    padding-bottom: 42.7%;
+    padding-right: 8.3%;
+}
+
+
+.planet {
+    position: absolute;
+}
+
+.mercury { 
+    animation: orbit 10s linear infinite;
+    
+   
+}
+
+.venus { 
+    animation: orbit-1 20s linear infinite;
+   
+}
+
+.earth { 
+    animation: orbit-2 30s linear infinite;
+   
+}
+
+.mars { 
+    animation: orbit-3 40s linear infinite;
+   
+}
+
+
+.uranus {
+    animation: orbit-4 60s linear infinite;
+   
+}
+
+.saturnus {
+    animation: orbit-5 90s linear infinite;
+   
+}
+
+.star{
+    animation: fly 10s linear infinite;
+    
+}
+    
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(450px) rotate(0deg) ; 
+    }
+    to {
+        transform: rotate(360deg) translateX(400px) rotate(-360deg) ;
+    }
+}
+
+
+@keyframes orbit-1 {
+    from {
+        transform: rotate(0deg) translateX(500px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(500px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-2 {
+    from {
+        transform: rotate(0deg) translateX(550px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(500px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-3 {
+    from {
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(350px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-4 {
+    from {
+        transform: rotate(0deg) translateX(600px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(500px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-5 {
+    from {
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(350px) rotate(-360deg);
+    }
+}
+
+
+@keyframes fly {
+    0% {
+        
+        transform: rotate(0deg) translateY(100px) rotate(0deg);
+    }
+    100% {
+        
+        transform: rotate(360deg) translateY(200px) rotate(-360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        
+        transform: rotate(0deg) ;
+    }
+    100% {
+        
+        transform: rotate(360deg) ;
+    }
+
+}
+
+
+
+
+.controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+#speed {
+    margin-left: 10px;
+}
+
+#speed-value {
+    margin-left: 10px;
+}

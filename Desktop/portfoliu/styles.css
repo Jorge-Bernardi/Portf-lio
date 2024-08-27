@@ -167,3 +167,58 @@ body {
 #speed-value {
     margin-left: 10px;
 }
+
+
+
+
+
+/*
+/* Estilos para smartphones (máximo de 600px de largura) */
+/*
+@media only screen and (max-width: 600px) {
+    .solar-system {
+        flex-direction: column;
+    }
+    
+    .planet img {
+        max-width: 80px; /* Menor tamanho máximo das imagens */
+/*    }
+
+    .star img {
+        max-width: 60px; /* Ajusta o tamanho da estrela */
+/*    }
+}
+
+/* Estilos para tablets (entre 601px e 900px de largura) */
+/*
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .solar-system {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .planet img {
+        max-width: 100px; /* Tamanho padrão das imagens */
+ /*   }
+
+    .star img {
+        max-width: 80px; /* Ajusta o tamanho da estrela */
+   /* }
+}
+
+/* Estilos para computadores (mínimo de 901px de largura) */
+/*@media only screen and (min-width: 901px) {
+    .solar-system {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .planet img {
+        max-width: 120px; /* Tamanho maior das imagens */
+  /*  }
+
+    .star img {
+        max-width: 100px; /* Ajusta o tamanho da estrela */
+  /*  }
+}
